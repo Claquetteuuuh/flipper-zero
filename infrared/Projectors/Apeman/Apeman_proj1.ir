@@ -1,0 +1,50 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: On_off
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 01 FE 00 00
+# 
+name: Ok
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 0D F2 00 00
+# 
+name: Top
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 0B F4 00 00
+# 
+name: Bottom
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 0F F0 00 00
+# 
+name: Left
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 49 B6 00 00
+# 
+name: Right
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 4A B5 00 00
+# 
+name: Orient_haut
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 50 AF 00 00
+# 
+name: Orient_bas
+type: parsed
+protocol: NECext
+address: 00 BD 00 00
+command: 51 AE 00 00
